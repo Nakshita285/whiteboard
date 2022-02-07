@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tools-content {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#redo {
+}
+
+.tools {
+    height: 80%;
+    width: 53%;
+    border: 1px solid darkgray;
+    box-shadow: 0px 1px 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool {
+    height: 100%;
+    width: 20%;
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tool img {
+    height: 80%;
+    width: 80%;
+    margin: 1px;
+    transition: transform 0.5s;
+}
+
+.tool img:hover {
+    transform: scale(1.1);
+    background: rgb(235, 234, 234);
+    box-shadow: 0px 1px 5px;
+    border-radius: 10px;
+}
+
+.activeToolStyling {
+    transform: scale(1.1);
+    background: rgb(235, 234, 234);
+    box-shadow: 0px 1px 5px;
+    border-radius: 10px;
+}
+
+.tool-options {
+    height: 80px;
+    width: 110px;
+    position: absolute;
+    top: 54px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid darkgray;
+    box-shadow: 0px 1px 2px;
+}
+
+.tool-options input {
+    width: 90%;
+}
+
+.pencil-size {
+    text-align: center;
+}
+
+.pencil-colors {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    height: 18px;
+    width: 18px;
+    border: 1px solid;
+    border-radius: 7px;
+}
+
+.blue {
+    background: #3498db;
+}
+
+.black {
+    background: black;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: green;
+}
+
+.eraser-size {
+    text-align: center;
+}
+
+.canvas-content {
+    height: calc( 100vh - 60px);
+    overflow: hidden;
+}
+
+#canvas {
+}
+
+.hide {
+    display: none;
+    transform: none;
+    box-shadow: none;
+}
+
+.sticky {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 10px;
+    top: 30%;
+    left: 30%;
+    box-shadow: 5px 5px 7px rgb(33 33 33 / 70%);
+}
+
+.sticky-show {
+    /* transform: rotate(-5deg) ; */
+}
+
+/* .sticky:hover {
+    transform: scale(1.2);
+} */
+
+.sticky-header {
+    height: 20%;
+    display: flex;
+    background: #006266;
+    justify-content: end;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.minimize {
+    height: 25px;
+    width: 25px;
+    margin-right: 8px;
+    background: white;
+    border-radius: 6px;
+}
+
+.minimize:hover {
+    transform: scale(1.1);
+}
+
+.close:hover {
+    transform: scale(1.1);
+}
+
+.close {
+    border-radius: 4px;
+    height: 25px;
+    width: 25px;
+    background: white;
+    margin-right: 10px;
+}
+
+.sticky-content {
+    height: 80%;
+}
+
+#stickyNoteTextArea {
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px;
+    overflow: hidden;
+    outline: none;
+    border-color: #006266;
+}
+
+.minimize img {
+    height: 100%;
+    width: 100%;
+}
+
+.close img {
+    height: 100%;
+    width: 100%;
+}
+
+.imgUpload{
+    height: 100%;
+    width: 100%;
+}

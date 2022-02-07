@@ -1,0 +1,17 @@
+Whiteboard web application + desktop application
+-> use of Electron for making it desktop application
+    -> install electron 
+    -> install package.json file
+
+=====  Basic functionality =====
+1. Pencil
+2. Eraser
+3. Undo 
+4. Redo
+5. Sticky
+6. Photo upload
+7. Download
+8. use canvas 
+
+==== optional functionality ====
+-> Home menu

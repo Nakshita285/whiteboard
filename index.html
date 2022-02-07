@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tools-content">
+        <div class="tools">
+            <div class="tool" id="pencil">
+                <img src="./NewIcons/Black_Pencil.svg" alt=""/>
+                <div class="tool-options hide">
+                    <div class="pencil-size">
+                        <input type="range" value="10" min="10" max="40">
+                    </div>
+                    <div class="pencil-colors">
+                        <div class="blue box"></div>
+                        <div class="black box"></div>
+                        <div class="red box"></div>
+                        <div class="yellow box"></div>
+                        <div class="green box"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tool" id="eraser">
+                <img src="./NewIcons/Eraser.svg" alt="Eraser.svg"/>
+                <div class="tool-options hide">
+                    <div class="eraser-size">
+                        <input type="range" value="15" min="15" max="40">
+                    </div>
+                </div>
+            </div>
+            <div class="tool" id="undo"><img src="./NewIcons/Undo.svg" alt="Undo.svg"/></div>
+            <div class="tool" id="redo"><img src="./NewIcons/Redo.svg" alt="Redo.svg"/></div>
+            <div class="tool" id="stickynote"><img src="./NewIcons/StickyNote.svg" alt="StickyNote.svg"/></div>
+            <div class="tool" id="photoUpload">
+                <img src="./NewIcons/Photo.svg" alt="Photo.svg"/>
+                <input type="file"  class=" photoInput hide">
+            </div>
+            <div class="tool" id="download"><img src="./NewIcons/Download.svg" alt="Download.svg"/></div>
+        </div>
+        
+    </div>
+    <div class="canvas-content">
+        <canvas id="canvas"></canvas>
+    </div>
+
+
+    
+    <script src="./script.js"></script>
+    <script src="./tools.js"></script>
+    <script src="./undoRedo.js"></script>
+    <script src="./stickyNotes.js"></script>
+    <script src="./imageUpload.js"></script>
+
+</body>
+</html>
